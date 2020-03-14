@@ -1,37 +1,11 @@
-## Welcome to GitHub Pages
+## Mini cursos com especialistas do mercado
 
-You can use the [editor on GitHub](https://github.com/danvitoriano/certifica.tech/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Assista apresentações sobre temas atuais do mercado de tecnologia, responda uma pequena avalição ao final e ganhe seu certificado de treinamento por especialistas do mercado.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+Os eventos acontecem presencialmente e online. Acompanhe nosso grupo no [Meetup Certifica.Tech](https://www.meetup.com/pt-BR/certificatech/) e inscreva nos encontros.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Avaliação e certificado gratuitos
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/danvitoriano/certifica.tech/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Os encontros ocorrem em instituições de ensino e empresas que desejam promover a educação social. Os eventos são gratuitos. A cada encontro especialista apresentam tecnologias em um pequeno curso. Ao final, participantes respondem o questionário avaliativo elaborado pelo especialista. Notas acima de 7 recebem certificado de participação. Você pode adicioná-lo ao seu currículo ou LinkedIn.
