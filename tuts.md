@@ -1,75 +1,123 @@
-# Compartilhando códigos no GitHub
+# Contribuindo para projetos Open Source
 
-## Como utilizar a plataforma de repositórios remotos [GitHub](http://github.com/).
+## Como utilizar o GitHub para ajudar em projetos de terceiros
 
-![GitHub é um dos sites mais populares para desenvolvimento remoto](https://cdn-images-1.medium.com/max/3760/1*QUNxvPVwYt8-yXTgXdTZiw.jpeg)
+![Bem vindos aos projetos comunitários e de código aberto](https://cdn-images-1.medium.com/max/2400/1*mrkKIvrZgEcN4qmwQEjGiQ.jpeg)
 
-## Criado para desenvolvedores
+Para contribuir com um projeto open source é muito fácil.
 
-O [**GitHub](http://github.com/)** é uma plataforma de desenvolvimento remoto. Do [código aberto](https://github.com/open-source) aos [negócios](https://github.com/business) , você pode hospedar e revisar códigos, gerenciar projetos e criar software junto a milhões de desenvolvedores.
+Este artigo demonstra situações de contribuição para projetos de código aberto e compartilhado na plataforma de desenvolvimento remoto [GitHub](https://github.com/), porém, os conceitos podem ser aplicados em outras plataformas como [BitBucket](https://bitbucket.org/) e [GitLab](https://about.gitlab.com/).
+>  *Para saber mais sobre [Github](https://github.com/), consulte o post [Compartilhando códigos no GitHub](https://medium.com/@dnvtrn/compartilhando-c%C3%B3digos-no-github-df450d2c8a25)*
+>  *Para saber mais sobre tópicos relacionados à ferramenta de versionamento de código Git, consulte o post [O que você precisa saber sobre Git](https://medium.com/@dnvtrn/o-que-voc%C3%AA-precisa-saber-sobre-git-28b37c43ed30)*
 
-Sua equipe pode criar processos de revisão que melhoram a qualidade do seu código e se encaixam no seu fluxo de trabalho.
+Tópicos deste artigo:
 
-As solicitações de "***Pull Request*"** são fundamentais para a maneira como as equipes revisam e aprimoram o código no GitHub. Desenvolva projetos, proponha novos recursos e discuta detalhes da implementação antes de alterar seu código-fonte.
+* Escolhendo uma Issue
 
-No GitHub você pode centralizar o código do seu site, aplicativo ou software, o mantendo privado apenas para sua equipe ou público, para que seja mantido e melhorado por outros desenvolvedores. É o que chamamos de ***Open Source***.
->  *Para saber mais sobre projetos Open Source, consulte o post [**Contribuindo para projetos Open Source](https://medium.com/@dnvtrn/contribuindo-para-projetos-open-source-5453686f8d8d)***
->  *Para saber mais sobre tópicos relacionados à ferramenta de versionamento de código Git, consulte o post [**O que você precisa saber sobre Git](https://medium.com/@dnvtrn/o-que-voc%C3%AA-precisa-saber-sobre-git-28b37c43ed30)***
+* Compartilhando seu progresso com comentários
 
-## Criando uma conta no GitHub
+* O quadro de Projeto
 
-Acesse a página principal do GitHub e preencha o cadastro escolhendo um nome de usuário. Após seu cadastro efetivado, você terá um perfil no GitHub para criar seus repositórios (projetos) ou fazer uma cópia de outros projetos ("*forkar*"). No seu perfil, é possível acompanhar suas contribuições:
+* Criando uma branch para minha Issue
 
-![Exemplo de perfil no GitHub](https://cdn-images-1.medium.com/max/2434/1*aqpuHyYRhBdLj7Aho0v9nQ.png)
+* Passos para criar branch da sua Issue
 
-## Criando um novo repositório
+* Pull Request: enviando sua branch para a master
 
-Você pode criar um novo repositório em sua conta pessoal ou em qualquer organização em que tenha permissões suficientes.
+* Passos para abrir sua Pull Request
 
-Dica: Os proprietários podem restringir as permissões de criação de repositório em uma organização. Para obter mais informações, consulte [Restringindo a criação de repositório em sua organização](https://help.github.com/en/enterprise/2.13/user/articles/restricting-repository-creation-in-your-organization).
+* Code Review: código revisado por outros contribuidores
 
- 1. No canto superior direito de qualquer página, clique em **Novo repositório** .
+* Mesclando uma branch para a master
 
-![](https://cdn-images-1.medium.com/max/2000/0*FRyX7qMRgNBVbW9E.png)
+Siga os passos seguintes e ajude a melhorar aplicações de código compartilhado Open Source.
 
-2. No menu suspenso *Owner*, selecione a conta na qual você deseja criar o repositório.
+## Escolhendo uma Issue
 
-![](https://cdn-images-1.medium.com/max/2000/0*YgdVCGRQ5_WXB9KI.png)
+O primeiro passo é escolher uma *Issue* aberta e atribuí-la para você.
 
-3. Digite um nome para seu repositório e uma descrição opcional.
+A *Issue* descreve, por exemplo, uma necessidade de incrementação “*enhanhecement*” ou correção “*bug*” do código.
 
-![](https://cdn-images-1.medium.com/max/2000/0*s2Fb7ypnoi_g9k1w.png)
+Vá até a aba Issues no Github do nosso projeto e escolha uma dentre as Issues abertas não assumidas por alguém.
 
-4. Escolha tornar o repositório público ou privado. Os repositórios públicos são visíveis ao público, enquanto os repositórios privados são acessíveis apenas a você e às pessoas com quem você os compartilha. Para obter mais informações, consulte [Configurando a visibilidade do repositório](https://help.github.com/en/enterprise/2.13/user/articles/setting-repository-visibility).
+![A aba Issues no GitHub](https://cdn-images-1.medium.com/max/2062/1*BsIowjdh-JNFINCsM7LP5A.png)
 
-![](https://cdn-images-1.medium.com/max/2000/0*6wusaLy445brhdTN.png)
+Para ajudar ou assumir uma *Issue*, é interessante deixar um comentário manifestando interesse ao usuário dono do repositório, isto é, a pessoa que tem permissão de escrita.
 
-Há vários itens opcionais com os quais você pode preencher previamente seu repositório. Se você estiver importando um repositório existente para o GitHub, não escolha nenhuma dessas opções, pois poderá introduzir um conflito de mesclagem. Você pode optar por adicionar novos arquivos usando a linha de comando posteriormente.
+Após a manifestação de interesse no comentário, a pessoa proprietária do repositório com permissão de escrita, fará a atribuição inserindo o seu nome de usuário no Github no campo Assigned. A partir deste momento, esta Issue é de sua responsabilidade, e você pode contribuir com mais efetividade, ganhando ainda a ajuda de outras pessoas.
 
-* Você pode criar um README, que é um documento que descreve seu projeto. Para mais informações, consulte [Sobre os READMEs](https://help.github.com/en/enterprise/2.13/user/articles/about-readmes).
+Para contribuir, não é obrigatório ter uma *Issue* designada a você. Através da discussão nos comentários é possível se organizar e contribuir.
 
-* Você pode criar um arquivo *.gitignore* , que é um conjunto de regras para ignorar. Para mais informações, consulte [Ignorando arquivos](https://help.github.com/en/enterprise/2.13/user/articles/ignoring-files) .
+## Compartilhando seu progresso com comentários
 
-5. Quando terminar, clique em **Criar repositório**. Agora você tem um projeto (repositório) no GitHub e está pronto para clonar na sua máquina através do Git.
+Compartilhe o progresso do seu trabalho com comentários direto da *Issue*. Toda a discussão entre as pessoas da *Issue*, e até mesmo comentários de contribuidores de outras *Issues* devem ser adicionados na para que todos possam acompanhar, discutir e ajudar publicamente. Isso é fundamental para um projeto *open source*.
 
-Além de criar seus próprios repositórios, você pode fazer uma cópia de repositórios alheios (*forkar*) e contribuir em projetos remoto de terceiros.
+![Exemplo de comentários em uma Issue](https://cdn-images-1.medium.com/max/2000/1*imO3dGK8GbI14kRAQJAc6w.png)
 
-## Fazendo Fork de repositórios remotos
+## O quadro de Projeto
 
-Ao fazer um *fork*, cria-se uma cópia do código fonte de um projeto hospedado no GitHub para a sua conta. Você pode modificar esta cópia à vontade sem afetar o código fonte original.
+O Github oferece uma função muito interessante em todos os seus repositórios. A aba Projetos simula um quadro Kanban onde é possível acompanhar o progresso e evolução das Issues em andamento e abertura e revisão de Pull Requests.
 
-Quando quiser integrar suas modificações ao código original, basta fazer um ***Pull Request***. Para saber mais sobre este processo, leia o post [**Contribuindo para Projetos Open Source](https://medium.com/@dnvtrn/contribuindo-para-projetos-open-source-5453686f8d8d)**
+Ao assumir uma *Issue*, você pode ir até a aba *Projects*, escolher um projeto (caso haja) e mover a *Issue* atribuída a você da coluna *To Do* para a coluna *In Progress*. Isso indica aos contribuidores do projeto que você já está trabalhando na *Issue* que assumiu.
 
-Para fazer o *fork*, você deve primeiro logar-se na sua conta do Github e em seguida acessar o repositório que deseja fazer uma cópia. Na página do repositório, clique no botão “*Fork*” localizado no canto superior direito da página:
+![Exemplo de Projeto Kanban no GitHub](https://cdn-images-1.medium.com/max/2878/1*I_hb6lbKrzxtj_B6UQBBJg.png)
 
-![](https://cdn-images-1.medium.com/max/2000/0*kz28aja2sRIDBbvV)
+## Criando uma branch para minha Issue
 
-Na tela que se abrirá, selecione a sua conta do GitHub para iniciar o *fork* do repositório. A cópia pode levar alguns minutos para completar. Enquanto isso, deverá ser exibida uma imagem semelhante a esta:
+O código principal de um projeto open source, geralmente, está na branch master. Ela será o repositório central onde todo o conteúdo pronto e revisado pelos contribuidores do projeto permanecerá.
 
-![](https://cdn-images-1.medium.com/max/2000/0*v4GF1v0499MiKFDx)
+Ao assumir uma *Issue* dando *Assigned* para você, e a colocando em *In Progress* na aba *Projects*, o próximo passo é criar uma branch a partir da master com o nome da sua *Issue*. Todo o código que vai solucionar o problema da sua *Issue* ficará na branch de mesmo nome, para que ao final você abra uma *Pull Request* para a master, com a finalidade de mesclarmos os códigos e a nossa aplicação *open source* receba sua contribuição de forma definitiva na master.
+>  *Para saber mais sobre *Branches*, *Merge*, *Pull Request* e outros tópicos relacionados ao Git, consulte o post [O que você precisa saber sobre Git](https://medium.com/@dnvtrn/o-que-voc%C3%AA-precisa-saber-sobre-git-28b37c43ed30)*
 
-Assim que o *fork* do repositório tiver sido concluído, você será redirecionado automaticamente para a cópia do repositório na sua conta do GtiHub. Você pode confirmar que a cópia foi feita corretamente verificando o status do repositório no canto superior esquerdo da página. O status conterá a mensagem: “*forked from danvitoriano/negociacoes*”.
+### Passos para criar branch da sua Issue
 
-Pronto! Você já tem a sua própria versão do código fonte de um repositório do GitHub.
->  *Para saber como editar seus códigos de repositórios do GitHub na sua máquina local, consulte o post [**O que você precisa saber sobre Git](https://medium.com/@dnvtrn/o-que-voc%C3%AA-precisa-saber-sobre-git-28b37c43ed30)** e aprenda mais sobre tópicos relacionados à ferramenta de versionamento de código.*
->  *Para saber mais sobre projetos Open Source, consulte o post [**Contribuindo para projetos Open Source](https://medium.com/@dnvtrn/contribuindo-para-projetos-open-source-5453686f8d8d)***
+ 1. Crie uma branch a partir da master.
+
+ 2. Sincronize sua branch master local com as atualizações mais recentes do repositório remoto fazendo git pull origin master.
+
+ 3. Crie a branch para sua *Issue* com o comando git checkout -b issue-numero, ou seja, o nome da sua branch deve ser o numero da sua Issue no Github.
+
+ 4. Pronto, você já está na branch da sua issue e já pode resolver seu código. Lembre sempre de publicar suas atualizações e salvá-las no repositório remoto com a sequência de comandos: git add ., `git commit -m "Descrição do que está sendo salvo" e "git push origin issue-numero".
+>  *Para saber mais sobre *Checkout*, *Add*, *Commit*, *Push* e outros tópicos relacionados ao Git, consulte o post [O que você precisa saber sobre Git](https://medium.com/@dnvtrn/o-que-voc%C3%AA-precisa-saber-sobre-git-28b37c43ed30)*
+
+## Pull Request: enviando sua branch para a master
+
+Ao finalizar as alterações e adições no código da sua *branch* que resolverá a *issue* que você assumiu, é preciso abrir uma Requisição de Atualização, chamada popularmente de “*Pull Request*”. Este processo submete o código de uma *branch* para ser mesclado na *branch* master, a *branch* que reflete o código mais atualizado, correto e aprovado por todos os contribuidores, isto é, o código que deve estar em produção e ser exibido ao usuário final.
+
+Este processo pode ser feito por comandos via terminal, mas é mais fácil fazer este processo pelo site do Github.
+
+### Passos para abrir sua Pull Request
+
+ 1. Acesse o repositório do projeto e altere para a *branch* correspondente à sua issue
+
+ 2. Clique no botão *New Pull Request*
+
+ 3. Agora é preciso comparar as duas versões: a sua *branch* com a master
+
+ 4. Caso apareça a mensagem “*Can’t automatically merge*”, é preciso voltar ao terminal, buscar as atualizações mais recentes da master com git pull origin master e mesclar as atualizações com a sua *branch* com git merge master, desde que você já esteja na sua *branch*. Caso haja, resolva os conflitos, salve as alterações e publique novamente no repositório do Gihtub com git push origin issue-numero. Repita os passos anteriores até que seja possível a mesclagem automática.
+
+ 5. Caso apareça a mensagem “*Able to merge*”, sua *Pull Request* está pronta para ser mesclada automaticamente, isto é, não há conflitos, e os contribuidores poderão revisar seu código após a abertura da solicitação.
+
+ 6. Verifique a comparação entre os dois códigos através da diferenciação do que você está adicionando ou removendo em casa arquivo.
+
+ 7. No título informe o nome e número da sua *issue*. Descreva resumidamente as alterações que sua *Pull Request* propõe para solucionar a *issue* e informe o número da *issue* na descrição usando o código markdown # + o número da *issue* para que a sua *Pull Request* seja linkada com a aba *Projects* e possa aparecer como disponível para revisão.
+
+ 8. Após a descrição e revisão, clique no botão *Create pull request*.
+>  *Para saber mais sobre *Pull Request *e outros tópicos relacionados ao Git e Github, consulte o post [O que você precisa saber sobre Git](https://medium.com/@dnvtrn/o-que-voc%C3%AA-precisa-saber-sobre-git-28b37c43ed30)*
+
+![Exemplo de Pull Request no GitHub](https://cdn-images-1.medium.com/max/2100/1*lCsoa0GZQVL9b5i_bqnl8g.png)
+
+## Code Review: código revisado por outros contribuidores
+
+Quando uma *Pull Request* está aberta, todos podem contribuir com a sua revisão. Basta adicionar comentários apontando erros, pontos de atenção, sugestões ou validando o código, aprovando a liberação para mesclagem.
+
+## Mesclando uma branch para a master
+
+Se a proposta de alteração do código da master for aprovada pelos contribuidores e pela pessoa com permissão de escrita no repositório, sua *branch* será mesclada com a master, ou seja, sua *Pull Request* será aprovada.
+
+Automaticamente ela será listada como *Merged*. Após este processo, você pode apagar sua *branch*, pois o código já está na *branch* principal, disponível para que todos atualizem seus repositórios locais, além de publicá-la em produção.
+>  *Fonte: 
+[Univali](https://github.com/UNIVALI-LITE/Portugol-Studio/wiki/Fazendo-um-Fork-do-reposit%C3%B3rio)
+[GitHub Help](https://help.github.com/pt)*
+>  *Para saber mais sobre *Pull Request *e outros tópicos relacionados ao Git e Github, consulte o post [O que você precisa saber sobre Git](https://medium.com/@dnvtrn/o-que-voc%C3%AA-precisa-saber-sobre-git-28b37c43ed30)*
+>  *Para saber mais sobre [Github](https://github.com/), consulte o post [Compartilhando códigos no GitHub](https://medium.com/@dnvtrn/compartilhando-c%C3%B3digos-no-github-df450d2c8a25)*
