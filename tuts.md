@@ -1,145 +1,81 @@
-# Instalando o Node.js
+# Publicando projetos no Firebase
 
-## Trabalhe com módulos e JavaScript no servidor
+## Configuração de um projeto com HTML, CSS e JavaScript
 
-![A revolução JavaScript nos trouxe o Node.js](https://cdn-images-1.medium.com/max/6750/1*CC_GhFXCUxQDfIJ_Tl-pug.jpeg)
+![](https://cdn-images-1.medium.com/max/3200/1*B0Av_NnFrCKsyC7gN94ytg.png)
 
-O [**Node.js](https://nodejs.org/pt-br/)** é um sistema open source em tempo execução JavaScript, criado com o mecanismo JavaScript [**V8](https://v8.dev/)** utilizado pelo Google Chrome. O V8, implementa o *ECMAScript* (especificação JavaScript) e é escrito em C++, e roda em Windows, Mac e Linux, permitindo a execução de programas escritos com JavaScript.
+Projetos do **Firebase** são contêineres para seus apps ou web aps.
 
-Sistemas de tempo de execução são sistemas que convertem linguagem de programação em código interpretado por máquinas.
-> # Como um ambiente de execução JavaScript assíncrono orientado a eventos, o Node.js é projetado para desenvolvimento de aplicações escaláveis de rede.
+Apps compartilham recursos como o *Database* e o *Analytics* em tempo real, ou apenas utilizam o recurso de hospedagem *cloud* remoto possibilitando o acesso de interfaces ou APIs através de uma URL pública.
 
-O Node.js, apesar de jovem, é a força motriz por trás de um ecossistema gigante de aplicações sofisticadas em JavaScript.
+### Configurando um projeto remoto no Firebase Console
 
-O Node.js é um sistema open source, de código aberto, mantido pela [OpenJS Foundation](https://openjsf.org/).
+Para utilizar o Firebase, você precisa ter uma conta **Google** ativa. Se você utiliza, por exemplo, o Gmail ou Google Drive, você já tem uma conta Google.
 
-Saber JavaScript significa entender seu funcionamento no navegador e no servidor, pois sim, é possível com uma única linguagem (especificação) atuar nos dois lado. Talvez só o PHP seja tão despojado quanto o Node.js.
+ 1. Acesse [https://console.firebase.google.com/](https://console.firebase.google.com/) e faça o login com sua conta.
 
-Fazendo um paralelo com o mundo Java, imagine o Node.js como a JVM, capaz de interpretar o código em JavaScript e conversar com o sistema operacional.
+ 2. Clique em **Criar um projeto** ou **Adicionar Projeto**.
 
-Com o Node.js é possível também gerenciar módulos JavaScript. Módulos são pequenos scripts JavaScript responsáveis por pequenas funcionalidades. Com o Package Manager do Node.js, é possível adicioná-las ao seu projeto reutilizando código.
+ 3. Na próxima tela, informe o nome do projeto e clique em Continuar. Ex.: *negociacoes*. Caso o nome já exista, será gerado um código aleatório ao final do nome do projeto.
 
-Documentação oficial: [nodejs.org](https://nodejs.org/)
+ 4. O próximo passo é opcional, você escolhe se deseja adicionar o Google Analytics para receber métricas da sua aplicação. Ao optar pelo uso, você deverá informar na próxima tela a conta do Analytics a ser vinculada.
 
-## Usando o Terminal
+Com estes passos, o Firebase criará seu projeto e alocará os recursos de *cloud* necessários. Quando visualizar a mensagem "Seu novo projeto está pronto", clique em Continuar.
 
-Para trabalhar com Node.js é importante entender de (**CLI** — *Command Line Interface*). A maioria das operações são feitas através de linhas de comandos no terminal.
+### Instalando a Firebase CLI
 
-Alguns terminais para diferentes sistemas operacionais:
+É possível instalar a Firebase CLI por meio de um método compatível com seu sistema operacional, nível de experiência e/ou caso de uso. Seja qual for o modo de instalação da CLI, você terá acesso às mesmas funcionalidades e ao comando firebase.
 
-* Linux **Terminator** ([https://terminator-gtk3.readthedocs.io/en/latest/](https://terminator-gtk3.readthedocs.io/en/latest/))
+Consulte documentação oficial e instale a versão adequada:
+[**Material de consulta sobre a Firebase CLI**
+*A Firebase CLI ( GitHub) oferece uma série de ferramentas de gerenciamento, visualização e implantação para projetos do…*firebase.google.com](https://firebase.google.com/docs/cli?hl=pt-br#install_the_firebase_cli)
 
-* Mac **iTerm** ([https://www.iterm2.com](https://www.iterm2.com))
+### Inicializando seu projeto
 
-* Windows **Node Command Line** (**cmd**), **PowerShell** ([https://docs.microsoft.com/pt-br/powershell/](https://docs.microsoft.com/pt-br/powershell/))
+Faça login no firebase com suas credenciais para gerar um token de autenticação:
 
-## Instalando o Node.js
+    firebase login:ci
 
-Existem várias maneiras de instalar o Node.js. A versão atual, com suporte a longo tempo (**LTS** — *Long Term Support*) é a mais recomendada, mas cada projeto pode exigir uma versão específica do Node.js. Ou seja, se você instalar apenas uma versão na sua máquina, poderá ser complicado mudar caso um projeto precise de uma versão específica, mais antiga, por exemplo. Neste tutorial, vamos demonstrar duas opções de instalar o Node.js:
+Armazene o token em um lugar seguro pois você vai usá-lo em todos os comandos.
 
-* **Opção 1 — Baixando arquivo Binário**
+Execute o seguinte comando na raiz do diretório do projeto local para conectá-lo ao do Firebase:
 
-* **Opção 2 — Utilizando o NVM (recomendada)**
+    firebase init --token <seu-token>
 
-### Opção 1 — Baixando arquivo Binário
+Durante a inicialização do projeto, siga estas etapas dos prompts da Firebase CLI:
 
-A forma mais tradicional de instalar o Node.js é acessando a página [**https://nodejs.org/pt-br/download/](https://nodejs.org/pt-br/download/)**, escolha seu sistema operacional e baixe o arquivo binário o executando após o download. Esta opção é interessante para usuários de Windows e Mac. Basta executar o arquivo apenas.
+ 1. Pressione a tecla *Espaço* para configurar o Hosting.
 
-**Debian e Ubuntu based Linux**
+ 2. Selecione o projeto do Firebase criado anteriormente no Console para conectar ao diretório do seu projeto local. Escolha "*Use an existing project*".
 
-Aqui tem um passo a passo de como instalar o arquivo binário via terminal: [https://github.com/nodejs/help/wiki/Installation](https://github.com/nodejs/help/wiki/Installation)
+ 3. Especifique um diretório para usar como diretório raiz público. Ex.: a pasta *client*
 
-No terminal, faça o download da última versão LTS:
+ 4. Ao ser questionado sobre configurações de Single Page Application (*Configure as a single-page app (rewrite all urls to /index.html)?*), responda sim "y".
 
-    wget [https://nodejs.org/dist/vXX.XX.X/node-vXX.XX.XX-linux-x64.tar.xz](https://nodejs.org/dist/vXX.XX.X/node-vXX.XX.XX-linux-x64.tar.xz)
+ 5. Se o arquivo index.html já existir, responsa "N" para não sobrescrevê-lo.
 
-Descompacte o arquivo:
+Após seguir estes passos, deverá ter sido criado o arquivo de configurações firebase.json e o diretório da ferramenta. Estes arquivos devem ser incluídos no seu repositório remoto, por exemplo, no Github.
 
-    tar -xvf node-vXX.XX.X-linux-x64.tar.xz
+### Publicando o projeto no seu site Firebase Cloud Hosting
 
-Acesse o diretório descompactado:
+Se o seu projeto possui algum processo de *build*, como por exemplo, o uso de **Babel** e **WebPack**, é neste momento que você deve gerar a versão a ser colocada em produção. Por exemplo, rode o comando:
 
-    cd node node-vXX.XX.X-linux-x64
+    npm run build
 
-Copie os arquivos para sua pasta local
+Para implantar no seu site, execute o seguinte comando a partir da raiz do diretório local do seu projeto:
 
-    sudo cp -R * /usr/local/
+    firebase deploy --token <seu-token>
 
-Certifique-se de que o Node está instalado. A resposta deve ser a versão do Node para o comando no terminal:
+Este comando implanta uma **versão** nos sites do *Hosting* padrão do projeto do Firebase:
 
-    node -v
-    vXX.X.X
+* projectID.web.app
 
-Você pode instalar o Node de diversas outras maneiras no Linux: [https://github.com/nodesource/distributions/blob/master/README.md](https://github.com/nodesource/distributions/blob/master/README.md)
+* projectID.firebaseapp.com
 
-### Opção 2 — Utilizando o NVM (recomendado)
+Caso você receba um erro 503 ao publicar, vá ao Firebase Console na web, escolha o seu projeto, vá no menu *Authentication*, e na aba Usuários, autorize a conexão de usuários por email e senha.
 
-Às vezes, é preciso utilizar mais de uma versão do Node.js para executar projetos distintos. A solução é utilizar um versionador do Node.js (***Node Version Manager***). Um dos mais populares é o **NVM**.
+### Testando seu hosting com sucesso
 
-Para Windows:
+No Firebase Console da web, vá ao menu *Hoisting*, e escolha uma das URLs para acessar o projeto que você fez o deploy através da Firebase CLI.
 
-**NVM Windows:** [https://github.com/coreybutler/nvm-windows](https://github.com/coreybutler/nvm-windows)
-
-Para Mac e Unix based (Linux):
-
-**NVM:** [https://github.com/creationix/nvm](https://github.com/creationix/nvm)
-
-Para instalar ou atualizar o NVM, você deve executar o [script de instalação](https://github.com/nvm-sh/nvm/blob/v0.35.3/install.sh) . Para fazer isso, você pode baixar e executar o script manualmente ou usar o seguinte comando cURL ou Wget:
-
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-
-    wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-
-A execução de qualquer um dos comandos acima baixa um script e o executa. O script clona o repositório nvm para ~/.nvm, e as tentativas para adicionar as linhas de origem a partir do trecho abaixo para o arquivo de perfil correto ( ~/.bash_profile, ~/.zshrc, ~/.profileou ~/.bashrc).
-
-**Verificar instalação:**
-
-Para verificar se o NVM foi instalado, faça:
-
-    command -v nvm
-
-O resultado deve ser nvm.
-
-Agora você pode baixar diferentes versões do Node.js e alternar entre elas com o comando nvm use
-
-**Exemplo de uso:**
-
-    nvm use 12
-
-Estes outros artigos contém mais ajuda sobre como instalar o Node.js com o NVM:
-
-[Como instalar Node.js com NVM](https://medium.com/collabcode/como-instalar-node-js-no-linux-corretamente-ubuntu-debian-elementary-os-729fb4c92f2d)
-
-[Instalando e gerenciando várias versões do Node.js com NVM](https://www.treinaweb.com.br/blog/instalando-e-gerenciando-varias-versoes-do-node-js-com-nvm/)
-
-## Testando a instalação do Node.js
-
-Em qualquer diretório no terminal, crie um arquivo JavaScript:
-
-    vim index.js
-
-No arquivo digite apenas:
-
-    console.log(“hello world”)
-
-Salve, e no terminal execute o arquivo no Node.js:
-
-    node index.js
-
-O resultado deve ser:
-
-    hello world
-
-## NPM
-
-O Node.js já vem com o **NPM** instalado. Ele é um Gerenciador de Pacotes (*Package Manager*) e serve para instalar módulos JavaScript em ambiente de desenvolvimento ou para serem usados na sua aplicação em produção.
-
-Como instalar módulos como NPM:
-
-    **$** npm install request -g // instala globalmente
-    **$** npm install express — save // dependência da app
-    **$** npm install node-sass — save-dev // dependência apenas para desenvolvimento da app
-
-Para buscar todos os pacotes disponíveis no NPM: [https://www.npmjs.com/](https://www.npmjs.com/)
-
-Uma alternativa ao NPM é o **Yarn**, desenvolvido pelo Facebook Labs: [https://yarnpkg.com/en/](https://yarnpkg.com/en/)
+Se o seu deploy foi feito com sucesso, você visualizará seu projeto na URL configurada.
