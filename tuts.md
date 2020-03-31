@@ -194,5 +194,5 @@ Para resolver o conflito, basta remover todos os divisores de conflito. O conte�
 Você pode optar por aceitar o código vindo, manter o atual ou mesclar os dois.
 
 Após resolver todos os conflitos, salve os arquivos, e se necessário, salve-os no repositório local e os publique no repositório remoto com a sequência git add, git commite git push.
->  *Para saber mais sobre [**Github](https://github.com/)**, consulte o post [**Compartilhando códigos no GitHub](https://medium.com/@dnvtrn/compartilhando-c%C3%B3digos-no-github-df450d2c8a25)***
->  *Para saber mais sobre projetos Open Source, consulte o post [**Contribuindo para projetos Open Source](https://medium.com/@dnvtrn/contribuindo-para-projetos-open-source-5453686f8d8d)***
+>  Para saber mais sobre [Github](https://github.com/), consulte o post [Compartilhando códigos no GitHub](https://medium.com/@dnvtrn/compartilhando-c%C3%B3digos-no-github-df450d2c8a25)
+>  Para saber mais sobre projetos Open Source, consulte o post [Contribuindo para projetos Open Source](https://medium.com/@dnvtrn/contribuindo-para-projetos-open-source-5453686f8d8d)
